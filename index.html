@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/style.css">
+    <title>Portafolio - R Freddy Quea</title>
+</head>
+
+<body>
+
+    <!--banner-->
+    <header>
+        <nav>
+                <img class="img" src="/img/logo.png" alt="#">
+            <a href="#" id="menu"><img src="./img/menu.png" alt="menu"></a>
+            <ul class="menu">
+                <li><a href="#inform">About</a></li>
+                <li><a href="#minhas-habilidades">Skills</a></li>
+                <li><a href="#projetos">Projects Menu</a></li>
+                <li><a href="#contatos">Contacts</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!--menu options-->
+    <main>
+
+        <!--section information-->
+        <section id="inform">
+            <div id="sobre">
+                <h1>Freddy Quea</h1>
+                <h2>Full-stack web and app developer</h2>
+                <h3>UI/UX designer in training</h3>
+                <h4>Always learning new things</h4>
+            </div>
+
+            <div id="codigo">
+                <span>
+                    <pre class="hljs" style="display: block; overflow-x: auto; color: rgb(186, 186, 186);">let <span class="hljs-keyword" style="color: rgb(203, 120, 50);">button_menu </span>= document.querySelector(<span class="hljs-string" style="color: rgb(224, 196, 108);">".header_button"</span>)<span class="hljs-comment" style="color: rgb(127, 127, 127);">;</span>
+                    let float_menu = document.querySelector(<span class="hljs-string" style="color: rgb(224, 196, 108);">".header_menu--float"</span>)<span class="hljs-comment" style="color: rgb(127, 127, 127);">;</span>
+                                            
+                    let line_top = document.querySelector(<span class="hljs-string" style="color: rgb(224, 196, 108);">".header_button_line--top"</span>)<span class="hljs-comment" style="color: rgb(127, 127, 127);">;</span>
+                    let line_under = document.querySelector(<span class="hljs-string" style="color: rgb(224, 196, 108);">".header_button_line--bottom"</span>)<span class="hljs-comment" style="color: rgb(127, 127, 127);">;</span>
+                                            
+                    <span class="hljs-keyword" style="color: rgb(203, 120, 50);">button_menu.isSelected </span>= false<span class="hljs-comment" style="color: rgb(127, 127, 127);">;</span>
+                                            
+                    function <span class="hljs-keyword" style="color: rgb(203, 120, 50);">addEffectWriting(element, </span>time) {
+                        let element_array = element.innerText.split(<span class="hljs-string" style="color: rgb(224, 196, 108);">""</span>)<span class="hljs-comment" style="color: rgb(127, 127, 127);">;</span>
+                    
+                        element.count = <span class="hljs-number" style="color: rgb(104, 150, 186);">0</span><span class="hljs-comment" style="color: rgb(127, 127, 127);">;</span>
+                        element.innerText = <span class="hljs-string" style="color: rgb(224, 196, 108);">""</span><span class="hljs-comment" style="color: rgb(127, 127, 127);">;</span>
+                    
+                        function writeSymbols() {
+                            element.innerText += element_array[element.count]<span class="hljs-comment" style="color: rgb(127, 127, 127);">;</span>
+                            element.count++<span class="hljs-comment" style="color: rgb(127, 127, 127);">;</span>
+                    
+                            if (element.count &lt;= element_array.length) {
+                                setTimeout(() =&gt; {
+                                    writeSymbols()<span class="hljs-comment" style="color: rgb(127, 127, 127);">;</span>
+                                }, time)<span class="hljs-comment" style="color: rgb(127, 127, 127);">;</span>
+                            } else if (element.count &gt;= element_array.length) {
+                                element.count = <span class="hljs-number" style="color: rgb(104, 150, 186);">0</span><span class="hljs-comment" style="color: rgb(127, 127, 127);">;</span>
+                                element.innerText = <span class="hljs-string" style="color: rgb(224, 196, 108);">""</span><span class="hljs-comment" style="color: rgb(127, 127, 127);">;</span>
+                    
+                                writeSymbols()<span class="hljs-comment" style="color: rgb(127, 127, 127);">;</span>
+                            }
+                        }
+                        writeSymbols()<span class="hljs-comment" style="color: rgb(127, 127, 127);">;</span>
+                    }</pre>
+                </span>
+            </div>
+        </section>
+
+        <!--section history-->
+        <section id="historia">
+            <img src="./img/log-main.png" alt="QJ Developer">
+            <h1>“Be nice to nerds. It is very likely that you will end up working for one of them.” <br> Bill Gates</h1>
+        </section>
+
+        <!--My Hability-->
+        <section id="minhas-habilidades">
+            <h1 class="titulo">My abilities</h1>
+            <div id="habilidades">
+                <div class="card">
+                    <img src="./img/icon html.png" alt="HTML5" class="normal">
+                    <img src="./img/icon html -- hover.png" alt="HTML5" class="hover">
+                    <h1>HTML5</h1>
+                </div>
+                <div class="card">
+                    <img src="./img/icon css.png" alt="CSS3" class="normal">
+                    <img src="./img/icon css - hover.png" alt="CSS" class="hover">
+                    <h1>CSS3</h1>
+                </div>
+                <div class="card">
+                    <img src="./img/icon js.png" alt="JAVASCRIPT" class="normal">
+                    <img src="./img/icon js -- hover.png" alt="JAVASCRIPT" class="hover">
+                    <h1>JavaScript</h1>
+                </div>
+        
+                <div class="card">
+                    <img src="./img/icon-py.png" alt="PYTHON" class="normal">
+                    <img src="./img/icon-py-c.png" alt="PYTHON" class="hover">
+                    <h1>Python</h1>
+                </div>
+                <div class="card">
+                    <img src="./img/icon-javac.png" alt="JAVA" class="normal">
+                    <img src="./img/icon-java-c.png" alt="JAVA" class="hover">
+                    <h1>Java</h1>
+                </div>
+            </div>
+        </section>
+
+        <!--Section Projects-->
+        <section id="projetos">
+            <h1>My projects</h1>
+            <div id="sites">
+                <div id="apicombis" allowfullscreen>
+                    <h1>Api project for an information website about combis</h1>
+                    <iframe src="./apiCombis/index.html" frameborder="0" style="background-color: #fff;" height="100%"
+                        width="100%"></iframe>
+                    <div class="botoes">
+                        <a href="https://github.com/rqueaArequipa/ApiRest" target="_blank"><button>GO TO OR REPOSITORY</button></a>
+                    </div>
+                </div>
+                <a href="https://github.com/rqueaArequipa" target="_blank"><button class="mais">MORE</button></a>
+        </section>
+
+    </main>
+
+    <!--Footer-->
+    <footer>
+        <div id="msg">
+            <div id="log">
+                <h2><img class="logo" src="./img/developer.jpg" alt=""></h2>
+            </div>
+            <div id="contatos">
+                <h1>Contacts</h1>
+                <ul>
+                    <li><img src="./img/gmail.png" alt="gmail"> <a href="ruben.quea@tecsup.edu.pe"
+                            target="_blank">ruben.quea@tecsup.edu.pe</a></li>
+                    <li><img src="./img/instagram.png" alt="instagram"><a href="https://www.instagram.com/freddy.developer/"
+                            target="_blank">@freddy.developer</a></li>
+                    <li><img src="./img/github.png" alt="github"> <a href="https://github.com/rqueaArequipa"
+                            target="_blank">rqueaArequipa</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <!--Sript para poder mostrar el-->
+
+    <script>
+        let menuButton = document.querySelector("#menu");
+        let menu = document.querySelector(".menu");
+        
+        menuButton.addEventListener("click", function () {
+            menu.classList.toggle("open");
+        });
+        
+        const botoesTelaCheia = document.querySelectorAll('.botao-tela-cheia');
+        const iframes = document.querySelectorAll('iframe');
+        
+        botoesTelaCheia.forEach((botao, index) => {
+          botao.addEventListener('click', () => {
+            iframes[index].requestFullscreen();
+          });
+        });
+        </script>
+
+
+</body>
+
+</html>
